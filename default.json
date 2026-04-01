@@ -8,6 +8,10 @@
         {
             "matchDepTypes": ["devDependencies"],
             "groupName": "Dev Dependencies"
+        },
+        {
+            "matchDatasources": ["github-actions"],
+            "groupName": "GitHub Actions"
         }
     ]
 }
