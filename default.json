@@ -3,5 +3,11 @@
     "extends": [
         "config:best-practices",
         "group:recommended"
+    ],
+    "packageRules": [
+        {
+            "matchDepTypes": ["devDependencies"],
+            "groupName": "Dev Dependencies"
+        }
     ]
 }
