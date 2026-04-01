@@ -10,7 +10,7 @@
             "groupName": "Dev Dependencies"
         },
         {
-            "matchDatasources": ["github-actions"],
+            "matchManagers": ["github-actions"],
             "groupName": "GitHub Actions"
         }
     ]
