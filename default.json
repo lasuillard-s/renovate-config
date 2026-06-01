@@ -3,7 +3,8 @@
     "extends": [
         "config:best-practices",
         "group:recommended",
-        "schedule:automergeWeekdays"
+        "schedule:automergeWeekdays",
+        "helpers:pinGitHubActionDigestsToSemver"
     ],
     "timezone": "Asia/Seoul",
     "schedule": [
