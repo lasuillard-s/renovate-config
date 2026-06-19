@@ -18,7 +18,7 @@
     "enabled": true,
     "automerge": true,
     "schedule": [
-      "* 0-3 1 * *" // Monthly
+      "* 8-17 1 * *" // Office hours, every 1th day of the month
     ]
   },
   "packageRules": [
@@ -73,6 +73,18 @@
         "patch"
       ],
       "automerge": true
+    },
+    {
+      // Too frequent updates
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "taiki-e/install-action"
+      ],
+      "schedule": [
+        "* 8-17 * * 1" // Office hours, every Monday
+      ]
     }
   ]
 }
