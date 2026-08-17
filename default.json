@@ -125,7 +125,7 @@
         "taiki-e/install-action"
       ],
       "schedule": [
-        "* 8-17 * * 1" // Office hours, every Monday
+        "* 8-17 1 * *" // Office hours, every month
       ]
     }
   ]
