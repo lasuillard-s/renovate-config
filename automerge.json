@@ -40,7 +40,12 @@
         "pypi"
       ],
       "matchPackageNames": [
-        "boto3"
+        "boto3",
+        "django",
+        "pulumi",
+        "pulumi-aws",
+        "pulumi-gcp",
+        "pulumi-github"
       ],
       "matchUpdateTypes": [
         "minor",
