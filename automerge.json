@@ -61,6 +61,23 @@
         "svelte"
       ],
       "automerge": true
+    },
+    {
+      "description": "Automerge trusted Rust dependencies",
+      "matchDatasources": [
+        "crate"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchPackageNames": [
+        "serde",
+        "serde_derive",
+        "serde_json",
+        "tokio"
+      ],
+      "automerge": true
     }
   ]
 }
