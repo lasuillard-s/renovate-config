@@ -1,0 +1,88 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "platformAutomerge": false,
+  "automergeStrategy": "squash",
+  "minimumReleaseAge": "14 days",
+  "packageRules": [
+    {
+      "description": "Automerge pins and digests",
+      "matchUpdateTypes": [
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
+      "automerge": true
+    },
+    {
+      "description": "Automerge trusted GitHub Actions updates",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "actions/*",
+        "astral-sh/setup-uv",
+        "aws-actions/*",
+        "codecov/codecov-action",
+        "docker/*",
+        "pnpm/action-setup",
+        "PyO3/maturin-action",
+        "pypa/gh-action-pypi-publish"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "description": "Automerge trusted Python dependencies",
+      "matchDatasources": [
+        "pypi"
+      ],
+      "matchPackageNames": [
+        "boto3",
+        "django",
+        "pulumi",
+        "pulumi-aws",
+        "pulumi-gcp",
+        "pulumi-github"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "description": "Automerge trusted Node.js dependencies",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchPackageNames": [
+        "svelte"
+      ],
+      "automerge": true
+    },
+    {
+      "description": "Automerge trusted Rust dependencies",
+      "matchDatasources": [
+        "crate"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchPackageNames": [
+        "serde",
+        "serde_derive",
+        "serde_json",
+        "tokio"
+      ],
+      "automerge": true
+    }
+  ]
+}
