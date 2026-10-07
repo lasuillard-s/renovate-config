@@ -42,10 +42,7 @@
       "matchPackageNames": [
         "boto3",
         "django",
-        "pulumi",
-        "pulumi-aws",
-        "pulumi-gcp",
-        "pulumi-github"
+        "ruff"
       ],
       "matchUpdateTypes": [
         "minor",
@@ -63,7 +60,9 @@
         "patch"
       ],
       "matchPackageNames": [
-        "svelte"
+        "@aws-sdk/*",
+        "svelte",
+        "vite"
       ],
       "automerge": true
     },
